@@ -236,8 +236,8 @@ footer ul.stewards {
 			font: bold 140%/2.5 Bitter, serif;
 		}
 		
-		/*footer ul.stewards > li.steward-adobe > a { background-position: -124px 0; }
-		footer ul.stewards > li.steward-apple > a {
+		footer ul.stewards > li.steward-adobe > a { background-position: -124px 0; }
+		/*footer ul.stewards > li.steward-apple > a {
 			background: none;
 			background-position: -248px 0;
 			text-indent: -40px;
