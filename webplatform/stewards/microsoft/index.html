@@ -1,163 +1,192 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <head>
-<title>WebPlatform Stewards: Microsoft</title>
-<meta charset="UTF-8" />
-<link rel="shortcut icon" href="http://webplatform.org/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/d/opensearch_desc.php" title="WebPlatform Docs (en)" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/" />
-<link rel="stylesheet" href="http://docs.webplatform.org/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.webplatform&amp;only=styles&amp;skin=webplatform&amp;*" />
-<!--[if lt IE 7]><style type="text/css">body{behavior:url("http://webplatform.org/d/skins/webplatform/csshover.min.htc")}</style><![endif]-->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!--[if lt IE 9]><script src="http://webplatform.org/skins/webplatform/html5shiv.js"></script><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WebPlatform Stewards: Steward Name</TITLE>
+    <meta charset="UTF-8">
+    <link href="http://webplatform.org/favicon.ico" rel="shortcut icon">
+    <link title="WebPlatform Docs (en)" href="/d/opensearch_desc.php" rel="search"
+          type="application/opensearchdescription+xml">
+    <link href="http://creativecommons.org/licenses/by/3.0/" rel="copyright">
+    <link href="css/load.css" rel="stylesheet">
+    <link href="css/microsoft.css" rel="stylesheet">
+    <!--[if lt IE 7]>
+    <style type="text/css">body {
+        behavior: url("http://webplatform.org/d/skins/webplatform/csshover.min.htc")
+    }</style><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://webplatform.org/skins/webplatform/html5shiv.js"></script><![endif]-->
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../skins/webplatform/ie8.css"><![endif]--> <!--[if lt IE 8]>
+    <link rel="stylesheet" href="../skins/webplatform/ie7.css"><![endif]-->
+    <style>
+        body {
+            position: relative;
+            z-index: -1;
+        }
 
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
-<!--[if lt IE 9]><link rel="stylesheet" href="../skins/webplatform/ie8.css"><![endif]-->
-<!--[if lt IE 8]><link rel="stylesheet" href="../skins/webplatform/ie7.css"><![endif]-->
-<style>
-body {
-	position: relative;
-	z-index: -1;
-}
+        .logo {
+            position: relative;
+            float: right;
+            padding: 15px;
+            padding-bottom: 0;
+            border: 1px solid hsla(45, 18%, 60%, .5);
+            margin: -1em .1em .5em .5em;
+            background: url('http://webplatform.org/d/skins/webplatform/images/nav-bg.png') hsl(45, 18%, 83%);
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, .2), 0 1px hsla(0, 0%, 100%, .8) inset;
+        }
 
-.logo {
-	position: relative;
-	float: right;
-	padding: 15px;
-	padding-bottom: 0;
-	border: 1px solid hsla(45, 18%, 60%,.5);
-	margin: -1em .1em .5em .5em;
-	background: url('http://webplatform.org/d/skins/webplatform/images/nav-bg.png') hsl(45, 18%, 83%);
-	box-shadow: 2px 3px 5px rgba(0,0,0,.2), 0 1px hsla(0,0%,100%,.8) inset;
-}
+        .logo:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -11px;
+            z-index: -1;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom-color: hsl(45, 18%, 60%);
+            border-top: 0;
+        }
 
-	.logo:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: -11px;
-		z-index: -1;
-		width: 0;
-		height: 0;
-		border: 10px solid transparent;
-		border-bottom-color: hsl(45, 18%, 60%);
-		border-top: 0;
-	}
+        .logo img {
+            display: block;
+            width: 240px;
+            padding: 10px;
+            border-radius: 10px;
+            background: white;
+        }
 
-	.logo img {
-		display: block;
-		width: 240px;
-		padding: 10px;
-		border-radius: 10px;
-		background: white;
-	}
-	
-	.logo:after {
-		content: 'WebPlatform.org Steward';
-		display: block;
-		font-size: 14pt;
-		text-align: center;
-		color: hsl(45, 18%, 44%);
-		text-shadow: 0 .1em .1em hsla(0,0%,100%,.6);
-	}
-</style>
+        .logo:after {
+            content: 'WebPlatform.org Steward';
+            display: block;
+            font-size: 14pt;
+            text-align: center;
+            color: hsl(45, 18%, 44%);
+            text-shadow: 0 .1em .1em hsla(0, 0%, 100%, .6);
+        }
+    </style>
+
+    <meta name="GENERATOR" content="MShtml 10.00.9200.16408">
 </head>
 <body class="ltr sitedir-ltr">
-	<div id="mw-page-base" class="noprint"></div>
-		<header id="mw-head" class="noprint">
-			<div class="container">
-				<!-- logo -->
-				<div id="p-logo">
-					 <a href="/docs/Main_Page"title="Visit the main page"></a>
-				</div>
-				<!-- /logo -->				
-			</div>
-		</header>
-		<!-- /header -->
-			
-		<nav id="sitenav">
-			<div class="container">
-			<ul class="links">
-   	                     <li><a href="http://docs.webplatform.org/wiki/" class="active">DOCS</a></li>
-        	             <li><a href="http://talk.webplatform.org/forums/">FORUMS</a></li>
-                	     <li><a href="http://talk.webplatform.org/chat/">CHAT</a></li>
-                     	     <li><a href="http://blog.webplatform.org/">BLOG</a></li>
-			</ul>
-			</div>
-		</nav>
+<div class="noprint" id="mw-page-base"></div>
+<header class="noprint" id="mw-head">
+    <div class="container"><!-- logo -->
+        <div id="p-logo"><a title="Visit the main page" href="http://webplatform.org/docs/Main_Page"></a></div>
+        <!-- /logo -->
+    </div>
+</header>
+<!-- /header -->
+<nav id="sitenav">
+    <div class="container">
+        <ul class="links">
+            <li><a class="active" href="http://webplatform.org/stewards/#">DOCS</a></li>
+            <li><a href="http://webplatform.org/stewards/#">TEACHING MATERIALS</a></li>
+            <li><a href="http://webplatform.org/stewards/#">FORUMS</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- content -->
 
-		<!-- content -->
-		<div id="content" class="mw-body">
-			<div class="container">
-				<a id="top"></a>
-				<div class="tool-area">
-					<div id="hierarchy-menu">
-						<ol id="breadcrumb-info" class="breadcrumbs">
-							<li><a href="http://webplatform.org/">HOME</a></li>
-							<li class="dropdown"><a href="http://webplatform.org/stewards">STEWARDS</a>
-								<ul>
-									<li><a href="http://webplatform.org/stewards/w3c">W3C</a></li>
-									<li><a href="http://webplatform.org/stewards/adobe">Adobe</a></li>
-									<li><a href="http://webplatform.org/stewards/apple">Apple</a></li>
-									<li><a href="http://webplatform.org/stewards/facebook">Facebook</a></li>
-									<li><a href="http://webplatform.org/stewards/google">Google</a></li>
-									<li><a href="http://webplatform.org/stewards/hp">HP</a></li>
-									<li><a href="http://webplatform.org/stewards/Microsoft">Microsoft</a></li>
-									<li><a href="http://webplatform.org/stewards/mozilla">Mozilla</a></li>
-									<li><a href="http://webplatform.org/stewards/nokia">Nokia</a></li>
-									<li><a href="http://webplatform.org/stewards/opera">Opera</a></li>
-								</ul>
-							</li>
-							<li><a href="http://webplatform.org/stewards/microsoft">Microsoft</a></li>						
-						</ol>
-					</div>
-					<div class="clear"> </div>
-				</div>
-				
-				<div id="page">
-					<div id="page-content">
-						<div id="main-content">
-							<h1 id="firstHeading" class="firstHeading">
-								<a href="http://microsoft.com" class="logo">
-									<img src="" alt="Microsoft logo" />
-								</a>
-								Microsoft
-							</h1>
-							
-							<!-- bodyContent -->
-							<div id="bodyContent">
-								<div id="jump-to-nav" class="mw-jump">
-									Jump to: <a href="#mw-head">navigation</a>,
-									<a href="#p-search">search</a>
-								</div>
-							</div>
-							<p>Some words about Microsoft. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac tellus a purus bibendum porttitor. Donec condimentum lobortis erat, et eleifend purus pulvinar eu. Praesent eleifend pellentesque risus, eu posuere eros convallis eget. Morbi eros diam, malesuada ac malesuada condimentum, porta in nibh. Ut consequat dictum risus, a pretium urna dictum in. Aliquam in lorem dapibus mi adipiscing viverra at viverra dolor. Etiam nec posuere purus. Morbi dignissim risus ac urna suscipit consequat. Integer dapibus ipsum ipsum. Nulla facilisi. Nunc consectetur, felis ac porta dignissim, lorem sem congue lacus, nec egestas ipsum purus ut erat. Aenean at quam at ipsum tincidunt egestas vel vitae felis. Morbi vel dolor vitae elit tristique gravida quis id turpis.</p>
-							<p>Duis vehicula eleifend nibh eget mattis. Nulla accumsan, ante eu sodales pharetra, nunc nisl viverra mauris, nec fermentum neque urna ac massa. Vivamus non lorem tortor, ut vulputate augue. Donec ut lobortis odio. Vestibulum ornare eros est, nec luctus est. Nunc suscipit mollis massa non facilisis. Duis vitae ultrices nulla. Fusce et odio massa, ut luctus augue. Duis lacinia venenatis tellus ac sodales. Praesent vel magna id est mattis molestie.</p>
-							<p>Proin adipiscing lobortis nisl, vitae sollicitudin mi sagittis sed. Aliquam euismod nisi a justo dapibus imperdiet. Duis at rutrum magna. Maecenas hendrerit tempus facilisis. Nulla eleifend eleifend aliquam. Proin sagittis placerat risus id dictum. Morbi accumsan pretium adipiscing. Donec magna nunc, feugiat sed semper sit amet, varius ultricies elit. Donec non commodo est. Duis facilisis facilisis purus, dignissim bibendum augue interdum sed. Aliquam mattis turpis eget metus adipiscing aliquam.</p>
-							<h2>Links</h2>
-							<ul>
-								<li><a href="http://microsoft.com">microsoft.com</a></li>
-							</ul>
-							<!-- /bodyContent -->
-						</div>
-						<!-- /main content -->
-						<div class="clear"></div>
-					</div>
-					<!-- /page content -->
-				</div>
-				<!-- /page -->
-			</div>
-			<!-- /container -->
-	</div>
-	<!-- /content -->
+<div class="mw-body" id="content">
+    <div class="container"><a id="top"></a>
 
-	<!-- footer -->
-	<footer id="mw-footer">
-		 <div class="container">
-			<span id="footer-title">WebPlatform<span id="footer-title-light">.org</span></span>
-		 </div>
-	</footer>
-	<!-- /footer -->
-	
-</body>
+        <div id="tool-area">
+            <div id="hierarchy-menu">
+                <ol class="breadcrumbs" id="breadcrumb-info">
+                    <li><a href="http://webplatform.org/">HOME</a></li>
+                    <li><a href="http://webplatform.org/stewards">STEWARDS</a>
+                        <ul>
+                            <li><a href="http://webplatform.org/stewards/adobe">Adobe</a></li>
+                            <li><a href="http://webplatform.org/stewards/apple">Apple</a></li>
+                            <li><a href="http://webplatform.org/stewards/facebook">Facebook</a></li>
+                            <li><a href="http://webplatform.org/stewards/google">Google</a></li>
+                            <li><a href="http://webplatform.org/stewards/hp">HP</a></li>
+                            <li><a href="http://webplatform.org/stewards/Microsoft">Microsoft</a></li>
+                            <li><a href="http://webplatform.org/stewards/mozilla">Mozilla</a></li>
+                            <li><a href="http://webplatform.org/stewards/nokia">Nokia</a></li>
+                            <li><a href="http://webplatform.org/stewards/opera">Opera</a></li>
+                            <li><a href="http://webplatform.org/stewards/w3c">W3C</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://webplatform.org/stewards/w3c">W3C</a></li>
+                </OL>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="page">
+            <div id="page-content">
+                <div id="main-content">
+                    <h1 class="firstHeading" id="firstHeading"><a class="logo" href="http://www.microsoft.com/">
+                        <img alt="Microsoft logo" src="imgs/microsoft.png"></a>
+                        Microsoft </h1><!-- bodyContent -->
+                    <div id="bodyContent">
+                        <div class="mw-jump" id="jump-to-nav"> Jump to: <a
+                                href="http://webplatform.org/stewards/#mw-head">navigation</a>,
+                            <a href="http://webplatform.org/stewards/#p-search">search</a>
+                        </div>
+                    </div>
+                    <p>We are a huge supporter of the Web Platform Docs community initiative and a key contributor
+                        with over 3,200 topics seeded from <a href="http://msdn.microsoft.com/library/ie/hh828809.aspx">MSDN</a>.
+                        We have allocated software engineers, test developers, and program managers to assist the
+                        W3C with the work ahead. Moving forward, we will continue to add content as we work with the
+                        W3C, other stewards, and the rest of the partners in this effort.</p>
+
+                    <p>We have been working with the W3C for decades: holding a number of leadership positions and
+                        engaging with a variety of different W3C groups through many individual contributors. We are
+                        committed to working with all members for the development of new open standards and the improvement
+                        of existing standards with the W3C. We hope we can count on your help too.</p>
+
+                    <h2>Links</h2>
+
+                    <p>Check out these additional resources about Internet Explorer: </p>
+
+                    <div id="links">
+                        <div class="tile">
+                            <a href="http://www.bing.com" target="_blank">
+                                <img src="imgs/msdn.png" alt="MSDN" />
+                                <span class="content">
+                                    <h1>IE Developer Center</h1>
+                                    <p>The ultimate resource for in depth knowledge about Internet Explorer.</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="tile center">
+                            <a href="http://www.bing.com" target="_blank">
+                                <img src="imgs/beauty.png" alt="Beauty of the Web" />
+                                <span class="content">
+                                    <h1>Beauty of the Web - Devs</h1>
+                                    <p>Real world tips and insights from some amazing websites built entirely with HTML5.</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="tile testdrive">
+                            <a href="http://www.bing.com" target="_blank">
+                                <img src="imgs/testdrive.png" alt="Test Drive" />
+                                <span class="content">
+                                    <h1>IE Test Drive</h1>
+                                    <p>A collection of web apps that push the limits of the web and explore new features.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /bodyContent -->
+                </div>
+                <!-- /main content -->
+                <div class="clear"></div>
+            </div>
+            <!-- /page content -->                 </div>
+        <!-- /page -->
+    </div>
+    <!-- /container -->     </div>
+<!-- /content -->     <!-- footer -->
+<footer
+        id="mw-footer">
+    <div class="container"><span id="footer-title">WebPlatform<span id="footer-title-light">.org</span></span>
+    </div>
+</footer>
+<!-- /footer -->     </body>
 </html>
