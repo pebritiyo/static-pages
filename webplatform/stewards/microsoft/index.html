@@ -7,11 +7,6 @@
     <link rel="search" type="application/opensearchdescription+xml" href="/d/opensearch_desc.php" title="WebPlatform Docs (en)" />
     <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/" />
     <link rel="stylesheet" href="http://docs.webplatform.org/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.webplatform&amp;only=styles&amp;skin=webplatform&amp;*" />
-
-    <link href="css/load.css" rel="stylesheet">
-    <link href="css/microsoft.css" rel="stylesheet">
-
-
 <!--[if lt IE 7]><style type="text/css">body{behavior:url("http://webplatform.org/d/skins/webplatform/csshover.min.htc")}</style><![endif]-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <!--[if lt IE 9]><script src="http://webplatform.org/skins/webplatform/html5shiv.js"></script><![endif]-->
@@ -65,6 +60,63 @@ body {
         color: hsl(45, 18%, 44%);
         text-shadow: 0 .1em .1em hsla(0,0%,100%,.6);
     }
+
+
+    .links{
+    margin:auto;
+    width:800px;
+    height:150px;
+}
+
+.tile{
+    width:248px;
+    height:145px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    border: 1px solid #E7E7E5;
+}
+
+.tile .content{
+    position:absolute;
+    display:block;
+    top:120px;
+    width:100%;
+    min-height:50px;
+    background-color: #B6DDE4;
+    padding:5px 5px 5px 5px;
+    color: #467883;
+    box-sizing: border-box;
+}
+
+.tile .content h1{
+    margin:0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.tile .content p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.tile.msdn {
+    background: url('../imgs/msdn.png');
+    background-color: gray;
+}
+
+.tile.beauty{
+    background: url('../imgs/beauty.png');
+}
+
+.tile.testdrive{
+    background: url('../imgs/testdrive.png');
+}
+
+.tile.center{
+    margin:0 8px 0 8px;
+}   
 </style>
 </head>
 <body class="ltr sitedir-ltr">
