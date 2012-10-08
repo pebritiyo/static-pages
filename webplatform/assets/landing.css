@@ -26,6 +26,7 @@
 			display: inline-block;
 			width: 10em;
 			margin: 0;
+			padding: 0;
 		}
 		
 		.subheader > nav > ul:first-child {
@@ -36,7 +37,28 @@
 			margin-left: 250px;
 		}
 		
+		@media (max-width: 880px) {
+			.subheader > nav > ul:first-child {
+				margin-right: 150px;
+			}
+			
+			.subheader > nav > ul + ul {
+				margin-left: 150px;
+			}
+		}
+		
+		@media (max-width: 640px) {
+			.subheader > nav > ul {
+				margin: 0 !important;
+			}
+			
+			.subheader > nav {
+				padding-top: 250px;
+			}
+		}
+		
 			.subheader > nav > ul > li {
+				padding: 0;
 				list-style: none;
 				border-top: 1px solid white;
 				border-bottom: 1px solid rgba(0,0,0,.1);
@@ -129,6 +151,12 @@ ul.hot-topics {
 		width: 25%;
 	}
 	
+	@media (max-width: 640px) {
+		ul.hot-topics > li {
+			width: 50%;
+		}
+	}
+	
 		ul.hot-topics > li > a {
 			color: #2fb4c5;
 			font-family: Bitter, serif;
@@ -214,7 +242,7 @@ ul.hot-topics {
 footer ul.stewards {
 	padding: 0;
 	float: right;
-	width: 650px;
+	max-width: 650px;
 	margin: -2.5em auto 0;
 	padding: 2em 0;
 }
