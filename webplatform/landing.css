@@ -1,0 +1,200 @@
+.subheader {
+	padding: 12px 0;
+	margin-bottom: 15px;
+	background: #30B4C5 url(images/stripes.svg) center;
+	background-size: 100%;
+	text-align: center;
+	font: bold 120% Bitter, serif;
+	text-transform: uppercase;
+	text-shadow: 0 .1em .1em white;
+}
+	
+	.subheader > h1 {
+		position: absolute;
+		left: 50%;
+		margin: 35px;
+		margin-left: -95px;
+	}
+
+	.subheader > nav {
+		display: block;
+		padding: 2em 0;
+		background: #f7f4f0;
+	}
+	
+		.subheader > nav > ul {
+			display: inline-block;
+			width: 10em;
+			margin: 0;
+		}
+		
+		.subheader > nav > ul:first-child {
+			margin-right: 250px;
+		}
+		
+		.subheader > nav > ul + ul {
+			margin-left: 250px;
+		}
+		
+			.subheader > nav > ul > li {
+				list-style: none;
+				border-top: 1px solid white;
+				border-bottom: 1px solid rgba(0,0,0,.1);
+				margin: 0;
+			}
+			
+			.subheader > nav > ul > li:first-child {
+				border-top: 0;
+			}
+			
+			.subheader > nav > ul > li:last-child {
+				border-bottom: 0;
+			}
+			
+				.subheader > nav > ul > li > a {
+					display: block;
+					padding: 1em 0;
+					color: #6d685b;
+				}
+				
+#main-content > h1 {
+	border-bottom: 1px solid #262626;
+	border-bottom-color: rgba(0,0,0,.15);
+}
+
+#main-content .intro {
+	margin-top: 0;
+	font-size: 120%;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+	.intro a.video {
+		position: relative;
+		float: right;
+		max-width: 250px;
+		border-radius: .4em;
+		margin-left: 2em;
+		text-align: center;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	
+		.intro .video:after {
+			content: '▶';
+			position: absolute;
+			bottom: 50%;
+			left: 50%;
+			width: 1em;
+			padding: .4em;
+			border: .2em solid;
+			border-radius: 50%;
+			margin-left: -1.1em;
+			color: #F99D1C;
+			text-indent: .15em;
+			font: 150%/1 serif;
+		}
+		
+		.intro .video:hover:after {
+			color: #30B4C5;
+		}
+	
+		.intro .video > img {
+			float: right;
+			max-width: 100%;
+			border-radius: inherit;
+		}
+		
+		.intro .video > .description {
+			position: absolute;
+			bottom: 0;
+			left: 0; right: 0;
+			padding: .6em 1em;
+			border-radius: inherit;
+			background: black;
+			background: rgba(0,0,0,.4);
+			color: white;
+			font-family: Bitter, serif;
+		}
+
+ul.hot-topics {
+	padding-left: 1.5em;
+}
+
+	ul.hot-topics > li {
+		float: left;
+		width: 25%;
+	}
+	
+		ul.hot-topics > li > a {
+			color: #2fb4c5;
+			font-family: Bitter, serif;
+			text-transform: uppercase;
+		}
+		
+#lightbox {
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	width: 0;
+	height: 0;
+	padding: 10px;
+	margin: -10px 0 0 -10px;
+	background: white;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+	-webkit-transition: .5s box-shadow, 1s .5s height, 1s .5s margin-top, 1s 1.5s width, 1s 1.5s margin-left, 0 2.5s visibility;
+	-moz-transition: .5s box-shadow, 1s .5s height, 1s .5s margin-top, 1s 1.5s width, 1s 1.5s margin-left, 0 2.5s visibility;
+	-o-transition: .5s box-shadow, 1s .5s height, 1s .5s margin-top, 1s 1.5s width, 1s 1.5s margin-left, 0 2.5s visibility;
+	transition: .5s box-shadow, 1s .5s height, 1s .5s margin-top, 1s 1.5s width, 1s 1.5s margin-left, 0 2.5s visibility;
+}
+
+#lightbox.open {
+	visibility: visible;
+	width: 640px;
+	height: 360px;
+	margin: -190px 0 0 -330px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.5), 0 0 0 4000px rgba(0,0,0,.3);
+	
+	-webkit-transition: 1s width, 1s margin-left, 1s 1s height, 1s 1s margin-top, .5s 2s box-shadow;
+	-moz-transition: 1s width, 1s margin-left, 1s 1s height, 1s 1s margin-top, .5s 2s box-shadow;
+	-o-transition: 1s width, 1s margin-left, 1s 1s height, 1s 1s margin-top, .5s 2s box-shadow;
+	transition: 1s width, 1s margin-left, 1s 1s height, 1s 1s margin-top, .5s 2s box-shadow;
+}
+
+	#lightbox > a {
+		position: absolute;
+		right: -.5em;
+		top: -.5em;
+		width: 1em;
+		padding: .3em;
+		background: #694D9F;
+		border: .2em solid white;
+		border-color: hsla(0,0%,100%,.6);
+		border-radius: 50%;
+		box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+		color: white;
+		text-shadow: 0 -.1em .1em rgba(0,0,0,.5);
+		text-align: center;
+		font: bold 200%/1 serif;
+	}
+	
+	#lightbox > a:hover {
+		background: #D02E27;
+	}
+	
+	#lightbox > iframe {
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+	
+	#lightbox > iframe {
+		display: none;
+		background: black;
+	}
+	
+	#lightbox.open > iframe {
+		display: block;
+	}
