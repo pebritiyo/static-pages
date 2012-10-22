@@ -79,6 +79,10 @@
 					color: #6d685b;
 				}
 				
+				.subheader > nav > ul > li > a:hover {
+					color: #30B4C5;
+				}
+				
 #main-content > h1 {
 	border-bottom: 1px solid #262626;
 	border-bottom-color: rgba(0,0,0,.15);
