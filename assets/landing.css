@@ -15,10 +15,6 @@
 		margin: 35px;
 		margin-left: -95px;
 	}
-	
-		.subheader > h1 > img {
-			max-width: 100%;
-		}
 
 	.subheader > nav {
 		display: block;
@@ -88,22 +84,6 @@
 			.subheader > nav > ul {
 				margin: 0;
 			}
-			
-	}
-	
-	@media (max-width: 340px) {
-		.subheader > h1 {
-			width: 120px;
-			margin: 30px 0 0 -60px;
-		}
-		
-		.subheader > nav {
-			padding-top: 150px;
-		}
-			
-			.subheader > nav > ul + ul {
-				margin-top: 1px;
-			}
 				
 				.subheader > nav > ul:first-child > li:last-child {
 					border-bottom: 1px solid rgba(0,0,0,.1);
@@ -131,87 +111,51 @@ h2#stewards {
 	overflow: hidden;
 }
 
-	.intro .video {
-		display: block;
+	.intro a.video {
+		position: relative;
+		float: right;
+		border-radius: .4em;
+		margin-left: 2em;
+		text-align: center;
 		overflow: hidden;
+		cursor: pointer;
 	}
 	
+		.intro .video:before {
+			content: '▶';
+			position: absolute;
+			bottom: 50%;
+			left: 50%;
+			width: 1em;
+			padding: .4em;
+			border: .2em solid;
+			border-radius: 50%;
+			margin-left: -1.1em;
+			text-indent: .15em;
+			font: 150%/1 serif;
+		}
+		
+		.intro .video:not(:hover):before {
+			color: #F99D1C;
+		}
+	
 		.intro .video > img {
-			float: left;
-			max-width: 50px;
+			float: right;
+			max-width: 250px;
 			border-radius: inherit;
 		}
 		
 		.intro .video > .description {
+			position: absolute;
+			bottom: 0;
+			left: 0; right: 0;
+			padding: .6em 1em;
+			border-radius: inherit;
+			background: black;
+			background: rgba(0,0,0,.4);
+			color: white;
 			font-family: Bitter, serif;
 		}
-
-	@media (min-width: 340px) {
-		.intro a.video {
-			position: relative;
-			float: right;
-			border-radius: .4em;
-			margin-left: 2em;
-			text-align: center;
-			overflow: hidden;
-			cursor: pointer;
-		}
-		
-			.intro .video:before {
-				content: '▶';
-				position: absolute;
-				bottom: 50%;
-				left: 50%;
-				width: 1em;
-				padding: .4em;
-				border: .2em solid;
-				border-radius: 50%;
-				margin-left: -1.1em;
-				text-indent: .15em;
-				font: 150%/1 serif;
-			}
-			
-			.intro .video:not(:hover):before {
-				color: #F99D1C;
-			}
-			
-			.intro .video > img {
-				float: right;
-				max-width: 250px;
-			}
-			
-			.intro .video > .description {
-				position: absolute;
-				bottom: 0;
-				left: 0; right: 0;
-				padding: .6em 1em;
-				border-radius: inherit;
-				border-top-left-radius: 0;
-				border-top-right-radius: 0;
-				background: black;
-				background: rgba(0,0,0,.4);
-				color: white;
-			}
-	}
-	
-	@media (max-width: 340px) {
-		.intro .video {
-			margin-bottom: .5em;
-		}
-		
-			.intro .video > img {
-				margin: .35em .5em 0 0;	
-			}
-			
-			.intro .video > .description {
-				line-height: 1.2;
-			}
-			
-			.intro .video > .description:before {
-				content: 'Video: ';
-			}
-	}
-		
 
 ul.hot-topics {
 	padding-left: 1.5em;

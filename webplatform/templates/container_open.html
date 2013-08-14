@@ -1,0 +1,43 @@
+<!-- content -->
+<div id="content" class="mw-body">
+	<div class="container">
+		<a id="top"></a>
+		
+		<? if(isset($breadcrumbs)): ?>
+		<div class="tool-area">
+			<div id="hierarchy-menu">
+				<ol id="breadcrumb-info" class="breadcrumbs">
+					<li><a href="http://webplatform.org/">Home</a></li>
+					<? foreach ($breadcrumbs as $id => $info): ?>
+						<?php 
+							$submenu = is_array($info)? $info['submenu'] : null;
+							$url = $submenu? $info['url'] : $info;
+						?>
+						<li <?= $submenu? 'class="dropdown"' : '' ?>>
+							<a href="<?= $url ?>"><?= $id ?></a>
+							<? if ($submenu): ?>
+								<ul>
+									<? foreach ($submenu as $id => $url): ?>
+										<li><a href="<?= $url ?>"><?= $id ?></a></li>
+									<? endforeach; ?>
+								</ul>
+							<? endif; ?>
+						</li>
+					<? endforeach; ?>
+				</ol>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		<? endif; ?>
+		
+		<div id="page">
+			<div id="page-content">
+				<div id="main-content">
+					
+					<!-- bodyContent -->
+					<div id="bodyContent">
+						<div id="jump-to-nav" class="mw-jump">
+							Jump to: <a href="#mw-head">navigation</a>,
+							<a href="#p-search">search</a>
+						</div>
+					</div>
