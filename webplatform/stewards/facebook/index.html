@@ -1,182 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="client-nojs">
 <head>
-<title>WebPlatform Stewards: Facebook</title>
-<meta charset="UTF-8" />
-<link rel="shortcut icon" href="http://webplatform.org/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/d/opensearch_desc.php" title="WebPlatform Docs (en)" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/" />
-<link rel="stylesheet" href="http://docs.webplatform.org/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.webplatform&amp;only=styles&amp;skin=webplatform&amp;*" />
-<!--[if lt IE 7]><style type="text/css">body{behavior:url("http://webplatform.org/d/skins/webplatform/csshover.min.htc")}</style><![endif]-->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!--[if lt IE 9]><script src="http://webplatform.org/skins/webplatform/html5shiv.js"></script><![endif]-->
-
-<meta name="viewport" content="width=device-width" initial-scale="950px">
-<!--[if lt IE 9]><link rel="stylesheet" href="../skins/webplatform/ie8.css"><![endif]-->
-<!--[if lt IE 8]><link rel="stylesheet" href="../skins/webplatform/ie7.css"><![endif]-->
-<style>
-body {
-	position: relative;
-	z-index: -1;
-}
-
-.logo {
-	position: relative;
-	float: right;
-	padding: 15px;
-	padding-bottom: 0;
-	border: 1px solid hsla(45, 18%, 60%,.5);
-	margin: -1em .1em .5em .5em;
-	background: url('http://webplatform.org/d/skins/webplatform/images/nav-bg.png') hsl(45, 18%, 83%);
-	box-shadow: 2px 3px 5px rgba(0,0,0,.2), 0 1px hsla(0,0%,100%,.8) inset;
-}
-
-	.logo:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: -11px;
-		z-index: -1;
-		width: 0;
-		height: 0;
-		border: 10px solid transparent;
-		border-bottom-color: hsl(45, 18%, 60%);
-		border-top: 0;
-	}
-
-	.logo img {
-		display: block;
-		width: 240px;
-		padding: 10px;
-		border-radius: 10px;
-		background: white;
-	}
-	
-	.logo:after {
-		content: 'WebPlatform.org Steward';
-		display: block;
-		font-size: 14pt;
-		text-align: center;
-		color: hsl(45, 18%, 44%);
-		text-shadow: 0 .1em .1em hsla(0,0%,100%,.6);
-	}
-</style>
+<?php
+	$title = 'Facebook · Stewards';
+	include '../../templates/headinclude.html';
+?>
+<link rel="stylesheet" href="../style.css" />
 </head>
 <body class="ltr sitedir-ltr">
-	<div id="mw-page-base" class="noprint"></div>
-		<header id="mw-head" class="noprint">
-			<div class="container">
-				<!-- logo -->
-				<div id="p-logo">
-					 <a href="/docs/Main_Page"title="Visit the main page"></a>
-				</div>
-				<!-- /logo -->				
-			</div>
-		</header>
-		<!-- /header -->
-			
-		<nav id="sitenav">
-			<div class="container">
-			<ul class="links">
-				<li><a href="http://docs.webplatform.org/wiki/">DOCS</a></li>
-				<li><a href="http://talk.webplatform.org/forums/">Q&amp;A</a></li>
-				<li><a href="http://talk.webplatform.org/chat/">CHAT</a></li>
-				<li><a href="http://blog.webplatform.org/">BLOG</a></li>
-			</ul>
-			</div>
-		</nav>
-
-		<!-- content -->
-		<div id="content" class="mw-body">
-			<div class="container">
-				<a id="top"></a>
-				<div class="tool-area">
-					<div id="hierarchy-menu">
-						<ol id="breadcrumb-info" class="breadcrumbs">
-							<li><a href="http://webplatform.org/">HOME</a></li>
-							<li class="dropdown"><a href="http://webplatform.org/stewards">STEWARDS</a>
-								<ul>
-									<li><a href="http://webplatform.org/stewards/w3c">W3C</a></li>
-									<li><a href="http://webplatform.org/stewards/adobe">Adobe</a></li>
-									<li><a href="http://apple.com" rel="nofollow">Apple</a></li>
-									<li><a href="http://webplatform.org/stewards/facebook">Facebook</a></li>
-									<li><a href="http://webplatform.org/stewards/google">Google</a></li>
-									<li><a href="http://webplatform.org/stewards/hp">HP</a></li>
-									<li><a href="http://webplatform.org/stewards/intel">Intel</a></li>
-									<li><a href=" http://webplatform.org/stewards/microsoft">Microsoft</a></li>
-									<li><a href="http://webplatform.org/stewards/mozilla">Mozilla</a></li>
-									<li><a href="http://webplatform.org/stewards/nokia">Nokia</a></li>
-									<li><a href="http://webplatform.org/stewards/opera">Opera</a></li>
-								</ul>
-							</li>
-							<li><a href="http://webplatform.org/stewards/facebook">Facebook</a></li>						
-						</ol>
-					</div>
-					<div class="clear"> </div>
-				</div>
-				
-				<div id="page">
-					<div id="page-content">
-						<div id="main-content">
-							<h1 id="firstHeading" class="firstHeading">
-								<a href="http://facebook.com" class="logo">
-									<img src="facebook_logo.png" alt="Facebook logo" />
-								</a>
-								Facebook
-							</h1>
-							
-							<!-- bodyContent -->
-							<div id="bodyContent">
-								<div id="jump-to-nav" class="mw-jump">
-									Jump to: <a href="#mw-head">navigation</a>,
-									<a href="#p-search">search</a>
-								</div>
-							</div>
-
-
-							<p>Founded in 2004, Facebook¹s mission is to make the world more open and connected. People use Facebook to stay connected with friends and family, to discover what¹s going on in the world, and to share and express what matters to them.</p>
-							
-							<blockquote class="testimonial">
-							  <p id="fp">
-							A community-driven documentation center that spawns the entire open Web
-							platform is a needed and welcome resource for developers. <a href="http://www.facebook.com/" rel="nofollow">Facebook</a> is
-							proud to contribute to this initiative and we are are looking forward to
-							see where the community takes it.
-							  </p>
-							  <address class="QuoteAttr">
-							    Tobie Langel, W3C Advisory Committee Representative, Facebook
-							  </address>
-							</blockquote>
-							<h2 id="links">Links</h2>
-							<ul>
-								<li><a href="http://facebook.com" rel="nofollow">facebook.com</a></li>
-								<li><a href="https://developers.facebook.com" rel="nofollow">DevRel</a></li>
-								<li><a href="https://www.facebook.com/groups/html5devs/" rel="nofollow">HTML5 FB group</a></li>
-							</ul>
-
-							<h2 id="contacts">Contacts</h2>
-							<p><b>Spokesperson:</b> <a href="mailto:jpearce@fb.com">James Pearce</a></p>
-							<p><b>Press contact:</b> <a href="mailto:derickmains@facebook.com">Derick Mains</a></p>
-							<!-- /bodyContent -->
-						</div>
-						<!-- /main content -->
-						<div class="clear"></div>
-					</div>
-					<!-- /page content -->
-				</div>
-				<!-- /page -->
-			</div>
-			<!-- /container -->
-	</div>
-	<!-- /content -->
-
-	<!-- footer -->
-	<footer id="mw-footer">
-		 <div class="container">
-			<span id="footer-title">WebPlatform<span id="footer-title-light">.org</span></span>
-		 </div>
-	</footer>
-	<!-- /footer -->
+	<?php
+		include '../../templates/header.html';
 	
+		$breadcrumbs = array(
+			'Stewards' => array(
+				'url' => 'http://webplatform.org/stewards',
+				'submenu' => array(
+					'Adobe' => "http://webplatform.org/stewards/adobe",
+					'Apple' => "http://apple.com",
+					'Facebook' => "http://webplatform.org/stewards/facebook",
+					'Google' => "http://webplatform.org/stewards/google",
+					'HP' => "http://webplatform.org/stewards/hp",
+					'Intel' => "http://webplatform.org/stewards/intel",
+					'Microsoft' => "http://webplatform.org/stewards/microsoft",
+					'Mozilla' => "http://webplatform.org/stewards/mozilla",
+					'Nokia' => "http://webplatform.org/stewards/nokia",
+					'Opera' => "http://webplatform.org/stewards/opera",
+					'W3C' => "http://webplatform.org/stewards/w3c"
+				)
+			),
+			'Facebook' => 'http://webplatform.org/stewards/facebook'
+		);
+		
+		include '../../templates/container_open.html';
+	?>
+
+	<h1 id="firstHeading" class="firstHeading">
+		<a href="http://facebook.com" class="logo">
+			<img src="facebook_logo.png" alt="Facebook logo" />
+		</a>
+		Facebook
+	</h1>
+	
+	<!-- bodyContent -->
+	<div id="bodyContent">
+		<div id="jump-to-nav" class="mw-jump">
+			Jump to: <a href="#mw-head">navigation</a>,
+			<a href="#p-search">search</a>
+		</div>
+	</div>
+
+
+	<p>Founded in 2004, Facebook¹s mission is to make the world more open and connected. People use Facebook to stay connected with friends and family, to discover what¹s going on in the world, and to share and express what matters to them.</p>
+	
+	<blockquote class="testimonial">
+	  <p id="fp">
+	A community-driven documentation center that spawns the entire open Web
+	platform is a needed and welcome resource for developers. <a href="http://www.facebook.com/" rel="nofollow">Facebook</a> is
+	proud to contribute to this initiative and we are are looking forward to
+	see where the community takes it.
+	  </p>
+	  <address class="QuoteAttr">
+	    Tobie Langel, W3C Advisory Committee Representative, Facebook
+	  </address>
+	</blockquote>
+	<h2 id="links">Links</h2>
+	<ul>
+		<li><a href="http://facebook.com" rel="nofollow">facebook.com</a></li>
+		<li><a href="https://developers.facebook.com" rel="nofollow">DevRel</a></li>
+		<li><a href="https://www.facebook.com/groups/html5devs/" rel="nofollow">HTML5 FB group</a></li>
+	</ul>
+
+	<h2 id="contacts">Contacts</h2>
+	<p><b>Spokesperson:</b> <a href="mailto:jpearce@fb.com">James Pearce</a></p>
+	<p><b>Press contact:</b> <a href="mailto:derickmains@facebook.com">Derick Mains</a></p>
+				
+	<?php include '../../templates/container_close.html'; ?>
+	<?php include '../../templates/footer_mini.html'; ?>
+		
 </body>
 </html>
