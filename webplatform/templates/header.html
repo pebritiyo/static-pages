@@ -28,7 +28,7 @@
 				);
 				
 				foreach ($menu as $id => $url) {
-					echo '<li><a href="' . $url . '"' . (strcasecmp($active, $id) === 0? 'class="active"' : '') . '>' . strtoupper($id) . '</a></li>';
+					echo '<li><a href="' . $url . '"' . (isset($active) && strcasecmp($active, $id) === 0? 'class="active"' : '') . '>' . strtoupper($id) . '</a></li>';
 				}
 			?>
 		</ul>
