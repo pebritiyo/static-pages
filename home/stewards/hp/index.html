@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<?php
+	$title = 'HP · Stewards';
+	include '../../templates/headinclude.html';
+?>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body class="ltr sitedir-ltr">
+	<?php
+		include '../../templates/header.html';
+	
+		$breadcrumbs = array(
+			'Stewards' => array(
+				'url' => 'http://www.webplatform.org/stewards',
+				'submenu' => array(
+					'Adobe' => "http://www.webplatform.org/stewards/adobe",
+					'Apple' => "http://apple.com",
+					'Facebook' => "http://www.webplatform.org/stewards/facebook",
+					'Google' => "http://www.webplatform.org/stewards/google",
+					'HP' => "http://www.webplatform.org/stewards/hp",
+					'Intel' => "http://www.webplatform.org/stewards/intel",
+					'Microsoft' => "http://www.webplatform.org/stewards/microsoft",
+					'Mozilla' => "http://www.webplatform.org/stewards/mozilla",
+					'Nokia' => "http://www.webplatform.org/stewards/nokia",
+					'Opera' => "http://www.webplatform.org/stewards/opera",
+					'W3C' => "http://www.webplatform.org/stewards/w3c"
+				)
+			),
+			'HP' => 'http://www.webplatform.org/stewards/hp'
+		);
+		
+		include '../../templates/container_open.html';
+	?>
+	<h1 id="firstHeading" class="firstHeading">
+		<a href="http://hpcloud.com" class="logo">
+			<img src="hp_cloud_services_blue_logo.png" alt="HP logo" />
+		</a>
+		HP
+	</h1>
+	
+	<p>WebPlatform.org floats on HP Cloud! HP provides the cloud hosting, as well as Database as a Service (DBaaS), and Block Storage for WebPlatform.org.</p>
+
+	<p>HP CloudSystem provides a complete and open platform to for building and managing hybrid clouds. Based on the OpenStack cloud standard, HP tailors public, ready-to-use cloud computing for developers and enterprise.</p>
+
+	<blockquote class="testimonial">
+	  <p id="hp">As a founding steward of Web Platform Docs, we appreciate the importance of standards, understand the frustration of dealing with non-standard features and the challenges in practical implementation of standards into products. We see great value in enabling developers with a place they can document how web technologies work in practical terms and are pleased to be supporting this initiative by providing infrastructure on <a href="https://www.hpcloud.com/" rel="nofollow">HP Cloud</a> for webplatform.org.</p>
+	  <address class="QuoteAttr">
+	    James R. Bell, Director of Industry Standards, HP
+	  </address>
+	</blockquote>
+
+	<h2 id="links">Links</h2>
+	<ul>
+		<li><a href="https://www.hpcloud.com/" rel="nofollow">hpcloud.com</a></li>
+		<li><a href="http://hp.com" rel="nofollow">hp.com</a></li>
+	</ul>
+			
+	<?php include '../../templates/container_close.html'; ?>
+	<?php include '../../templates/footer_mini.html'; ?>
+	
+</body>
+</html>

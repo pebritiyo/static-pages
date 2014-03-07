@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<?php
+	$title = 'Microsoft · Stewards';
+	include '../../templates/headinclude.html';
+?>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body class="ltr sitedir-ltr">
+	<?php
+		include '../../templates/header.html';
+	
+		$breadcrumbs = array(
+			'Stewards' => array(
+				'url' => 'http://www.webplatform.org/stewards',
+				'submenu' => array(
+					'Adobe' => "http://www.webplatform.org/stewards/adobe",
+					'Apple' => "http://apple.com",
+					'Facebook' => "http://www.webplatform.org/stewards/facebook",
+					'Google' => "http://www.webplatform.org/stewards/google",
+					'HP' => "http://www.webplatform.org/stewards/hp",
+					'Intel' => "http://www.webplatform.org/stewards/intel",
+					'Microsoft' => "http://www.webplatform.org/stewards/microsoft",
+					'Mozilla' => "http://www.webplatform.org/stewards/mozilla",
+					'Nokia' => "http://www.webplatform.org/stewards/nokia",
+					'Opera' => "http://www.webplatform.org/stewards/opera",
+					'W3C' => "http://www.webplatform.org/stewards/w3c"
+				)
+			),
+			'Microsoft' => 'http://www.webplatform.org/stewards/microsoft'
+		);
+		
+		include '../../templates/container_open.html';
+	?>
+	
+    <h1 class="firstHeading" id="firstHeading"><a class="logo" href="http://www.microsoft.com/">
+        <img alt="Microsoft logo" src="imgs/microsoft.png"></a>
+        Microsoft </h1><!-- bodyContent -->
+    <div id="bodyContent">
+        <div class="mw-jump" id="jump-to-nav"> Jump to: <a
+                href="http://www.webplatform.org/stewards/#mw-head">navigation</a>,
+            <a href="http://www.webplatform.org/stewards/#p-search">search</a>
+        </div>
+    </div>
+    <p>We are a huge supporter of the Web Platform Docs community initiative and a key contributor
+        with over 3,200 topics seeded from <a href="http://msdn.microsoft.com/library/ie/hh828809.aspx" rel="nofollow">MSDN</a>.
+        We have allocated software engineers, test developers, and program managers to assist the
+        W3C with the work ahead. Moving forward, we will continue to add content as we work with the
+        W3C, other stewards, and the rest of the partners in this effort.</p>
+
+    <p>We have been working with the W3C for decades: holding a number of leadership positions and
+        engaging with a variety of different W3C groups through many individual contributors. We are
+        committed to working with all members for the development of new open standards and the improvement
+        of existing standards with the W3C. We hope we can count on your help too.</p>
+
+    <h2 id="links">Links</h2>
+
+    <p>Check out these additional resources about Internet Explorer: </p>
+
+    <div class="link-list">
+        <div class="tile">
+            <a href="http://msdn.microsoft.com/ie" target="_blank" rel="nofollow">
+                <img src="imgs/msdn.png" alt="MSDN" />
+                <span class="content">
+                    <h1>IE Developer Center</h1>
+                    <p>The ultimate resource for in depth knowledge about Internet Explorer.</p>
+                </span>
+            </a>
+        </div>
+        <div class="tile center">
+            <a href="http://www.beautyoftheweb.com/developers" target="_blank" rel="nofollow">
+                <img src="imgs/beauty.png" alt="Beauty of the Web" />
+                <span class="content">
+                    <h1>Beauty of the Web - Devs</h1>
+                    <p>Real world tips and insights from some amazing websites built entirely with HTML5.</p>
+                </span>
+            </a>
+        </div>
+        <div class="tile testdrive">
+            <a href="http://ie.microsoft.com/testdrive/" target="_blank" rel="nofollow">
+                <img src="imgs/testdrive.png" alt="Test Drive" />
+                <span class="content">
+                    <h1>IE Test Drive</h1>
+                    <p>A collection of web apps that push the limits of the web and explore new features.</p>
+                </span>
+            </a>
+        </div>
+    </div>
+        
+	<?php include '../../templates/container_close.html'; ?>
+	<?php include '../../templates/footer_mini.html'; ?>
+</body>
+</html>

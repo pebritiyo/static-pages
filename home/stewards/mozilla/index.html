@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<?php
+	$title = 'Mozilla · Stewards';
+	include '../../templates/headinclude.html';
+?>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body class="ltr sitedir-ltr">
+	<?php
+		include '../../templates/header.html';
+	
+		$breadcrumbs = array(
+			'Stewards' => array(
+				'url' => 'http://www.webplatform.org/stewards',
+				'submenu' => array(
+					'Adobe' => "http://www.webplatform.org/stewards/adobe",
+					'Apple' => "http://apple.com",
+					'Facebook' => "http://www.webplatform.org/stewards/facebook",
+					'Google' => "http://www.webplatform.org/stewards/google",
+					'HP' => "http://www.webplatform.org/stewards/hp",
+					'Intel' => "http://www.webplatform.org/stewards/intel",
+					'Microsoft' => "http://www.webplatform.org/stewards/microsoft",
+					'Mozilla' => "http://www.webplatform.org/stewards/mozilla",
+					'Nokia' => "http://www.webplatform.org/stewards/nokia",
+					'Opera' => "http://www.webplatform.org/stewards/opera",
+					'W3C' => "http://www.webplatform.org/stewards/w3c"
+				)
+			),
+			'Mozilla' => 'http://www.webplatform.org/stewards/mozilla'
+		);
+		
+		include '../../templates/container_open.html';
+	?>
+	
+	<h1 id="firstHeading" class="firstHeading">
+		<a href="http://mozilla.org" class="logo">
+			<img src="mozilla_logo.png" alt="Mozilla logo" />
+		</a>
+		Mozilla
+	</h1>
+	
+	<p>Mozilla operates with a mission to promote openness, innovation and opportunity on the Internet. We're a proudly non-profit organization dedicated to keeping the power of the Web in people's hands. We're also a global community of users, contributors and developers working to innovate on the behalf of users everywhere. Anyone who uses a Mozilla product becomes a part of that community, helping us build a brighter future for the Web.</p>
+
+	<blockquote class="testimonial">
+	  <p id="mozilla">We are excited about the Web Platform Docs project because it aligns with <a href="http://www.mozilla.org/" rel="nofollow">Mozilla’s</a> mission to promote openness and innovation on the web. By involving the broader web community as well as organizations, we can help make sure more developers have access to up-to-date, comprehensive and practical information.
+	  </p>
+	  <address class="QuoteAttr">
+	    Stormy Peters, Director of Websites and Developer Engagement, Mozilla
+	  </address>
+	</blockquote>
+
+	<h2 id="links">Links</h2>
+	<ul>
+		<li><a href="http://mozilla.org" rel="nofollow">mozilla.org</a></li>
+	</ul>
+					
+	<?php include '../../templates/container_close.html'; ?>
+	<?php include '../../templates/footer_mini.html'; ?>
+		
+</body>
+</html>

@@ -1,0 +1,55 @@
+.links{
+    margin:auto;
+    width:800px;
+    height:150px;
+}
+
+.tile{
+    width:248px;
+    height:145px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    border: 1px solid #E7E7E5;
+}
+
+.tile .content{
+    position:absolute;
+    display:block;
+    top:120px;
+    width:100%;
+    min-height:50px;
+    background-color: #B6DDE4;
+    padding:5px 5px 5px 5px;
+    color: #467883;
+    box-sizing: border-box;
+}
+
+.tile .content h1{
+    margin:0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.tile .content p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.tile.msdn {
+    background: url('../imgs/msdn.png');
+    background-color: gray;
+}
+
+.tile.beauty{
+    background: url('../imgs/beauty.png');
+}
+
+.tile.testdrive{
+    background: url('../imgs/testdrive.png');
+}
+
+.tile.center{
+    margin:0 8px 0 8px;
+}

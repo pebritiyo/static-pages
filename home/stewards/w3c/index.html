@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<?php
+	$title = 'W3C · Stewards';
+	include '../../templates/headinclude.html';
+?>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body class="ltr sitedir-ltr">
+	<?php
+		include '../../templates/header.html';
+	
+		$breadcrumbs = array(
+			'Stewards' => array(
+				'url' => 'http://www.webplatform.org/stewards',
+				'submenu' => array(
+					'Adobe' => "http://www.webplatform.org/stewards/adobe",
+					'Apple' => "http://apple.com",
+					'Facebook' => "http://www.webplatform.org/stewards/facebook",
+					'Google' => "http://www.webplatform.org/stewards/google",
+					'HP' => "http://www.webplatform.org/stewards/hp",
+					'Intel' => "http://www.webplatform.org/stewards/intel",
+					'Microsoft' => "http://www.webplatform.org/stewards/microsoft",
+					'Mozilla' => "http://www.webplatform.org/stewards/mozilla",
+					'Nokia' => "http://www.webplatform.org/stewards/nokia",
+					'Opera' => "http://www.webplatform.org/stewards/opera",
+					'W3C' => "http://www.webplatform.org/stewards/w3c"
+				)
+			),
+			'W3C' => 'http://www.webplatform.org/stewards/w3c'
+		);
+		
+		include '../../templates/container_open.html';
+	?>
+	
+		<h1 id="firstHeading" class="firstHeading">
+		<a href="http://w3.org" class="logo">
+			<img src="http://www.w3.org/Icons/WWW/w3c_home_nb-v.svg" alt="W3C logo" />
+		</a>
+		W3C
+	</h1>
+
+	<p>The World Wide Web Consortium (W3C) is an international community that develops open <a href="http://www.w3.org/TR/" rel="nofollow">standards</a> to ensure the long-term growth of the Web. The <a href="http://www.w3.org/Consortium/mission.html" rel="nofollow">W3C mission</a> is to lead the World Wide Web to its full potential.</p>
+
+	<p>As part of its continuing emphasis on reaching everyday developers, W3C created the WebPlatform.org project, a site for community-based web development and design resources, and convened the stewards to help with the site's development.</p>
+
+	<blockquote class="testimonial">
+	  <p id="w3c">People in the web community — including browser makers, authoring tool makers, and leading edge developers and designers — have tremendous experience and practical knowledge about the web. Web Platform Docs is an ambitious project where all of us who are passionate about the web can share knowledge and help one another.</p>
+	  <address class="QuoteAttr">
+	    Tim Berners-Lee, W3C Director
+	  </address>
+	</blockquote>
+
+	<h2>Links</h2>
+	<ul>
+		<li><a href="http://w3.org" rel="nofollow">w3.org</a></li>
+		<li><a href="http://www.w3.org/community/" rel="nofollow">W3C Community Groups</a></li>
+		<li><a href="http://www.w3.org/Talks/" rel="nofollow">Talks by W3C Speakers</a></li>
+	</ul>
+					
+	<?php include '../../templates/container_close.html'; ?>
+	<?php include '../../templates/footer_mini.html'; ?>
+	
+</body>
+</html>
