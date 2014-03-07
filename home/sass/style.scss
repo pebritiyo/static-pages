@@ -5,24 +5,9 @@
   @include box-sizing(border-box);
 }
 
-// Import fonts
-//@import "fontface";
-
-//@import "variables"; // Set universal variables
-//@import "fonts";
-//@import "animations"; // Import Animation Definitions
-
-// Import Base Styles 
-//@import "typography";
-//@import "layout";
-//@import "page";
 @import "pageheader";
 @import "pagefooter";
-
-// Import Content Styles
-//@import "content";
-
+@import "homepage";
 
 // Original WPD CSS
 @import "WPDwiki";
-@import "WPDlanding";
