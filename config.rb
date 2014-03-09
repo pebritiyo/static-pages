@@ -3,19 +3,19 @@
 
 
 # Change this to :production when ready to deploy the CSS to the live server.
-environment = :development
-#environment = :production
+#environment = :development
+environment = :production
 
 # In development, we can turn on the FireSass-compatible debug_info.
-#firesass = false
-firesass = true
+firesass = false
+#firesass = true
 
 
 # Location of the projects's resources.
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
-javascripts_dir = "javascripts"
+javascripts_dir = "js"
 # Set this to the root of your project when deployed:
 http_path = "/"
 
