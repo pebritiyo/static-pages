@@ -3,13 +3,59 @@
 <head>
 <?php
 	$title = 'Your Web, documented';
-	include 'templates/headinclude.html';
-?>
-<link rel="stylesheet" href="http://www.webplatform.org/assets/landing.css" />
+
+
+/*  ***************** Mimicking headinclude ******************* */ ?>
+
+    <meta charset="UTF-8" />
+    <title><?php echo isset($title)? $title . ' · ' : ''; ?>WebPlatform.org</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="shortcut icon" href="http://www.webplatform.org/favicon.ico" />
+    <link rel="search" type="application/opensearchdescription+xml" href="http://docs.webplatform.org/w/opensearch_desc.php" title="WebPlatform Docs (en)" />
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/" />
+
+    <link rel="stylesheet" href="http://www.webplatform.org/assets/landing.css" />
+    <?php /* THIS SHOULD STAY IN HEADINCLUDE (for a while) <link rel="stylesheet" href="http://www.webplatform.org/assets/squished.css?v=2013091800" / */ ?>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+    <style>
+      /* Temporary fixes, SASS workspace not ready, and specifity wars :( */
+      footer[role=contentinfo] { padding-bottom:80px; }
+      footer[role=contentinfo] #footer-wordmark span { display:inline; }
+      footer[role=contentinfo] #footer-wordmark a { display:block; }
+      footer[role="contentinfo"] ul.stewards { max-width: 800px !important; }
+
+      @media screen and (min-width: 600px){ footer[role=contentinfo] #footer-title span { display:inline;} }
+    </style>
+
+    <!--[if lt IE 7]><style type="text/css">body{behavior:url("http://docs.webplatform.org/w/skins/vector/csshover.min.htc")}</style><![endif]-->
+
+    <!-- specific to the homepage -->
+    <meta name="description" content="Your Web, Documented. The latest information on how to use the technology that runs the web — HTML, CSS, JavaScript and more.">
+    <meta name="author" content="WebPlatform.org">
+    <meta property="twitter:account_id" content="523510988" />
+    <meta property="og:image" content="http://www.webplatform.org/logo/wplogo_transparent_xlg.png" />
+    <meta property="og:site_name" content="WebPlatform Docs" />
+
+<?php /*  ***************** /Mimicking headinclude ******************* */ ?>
+
 </head>
 <body class="ltr sitedir-ltr">
 
-	<header>
+	<header role="banner">
+
+		<!--<div id="jump-to-nav" class="mw-jump">
+			Jump to: <a href="index.html#mw-head">navigation</a>,
+			<a href="index.html#p-search">search</a>
+		</div> -->
+
 		<div id="mw-head" class="noprint">
 			<div class="container">
 				<div id="p-search">
@@ -23,80 +69,242 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="subheader">
-			<h1><img src="assets/logo-with-text.png" alt="WebPlatform.org" /></h1>
-			<nav>
+			<h1><img src="http://www.webplatform.org/assets/logo-with-text.png" alt="WebPlatform.org" /></h1>
+      <!-- <a href="index.html"><h1 class="title">WebPlatform.org</h1></a> -->
+
+			<nav role="navigation">
 				<ul>
-					<li><a href="http://docs.webplatform.org/wiki/">Docs</a></li>
-					<li><a href="http://docs.webplatform.org/wiki/WPD:Editors_Guide">Editing</a></li>
-					<li><a href="http://talk.webplatform.org/">Discussion</a></li>
+					<li><a href="http://docs.webplatform.org/wiki/">The Docs</a></li>
 				</ul>
 				<ul>
+					<li><a href="http://docs.webplatform.org/wiki/WPD:Community">Connect</a></li>
+					<li><a href="http://docs.webplatform.org/wiki/WPD:Editors_Guide">Contribute</a></li>
 					<li><a href="http://blog.webplatform.org">Blog</a></li>
-					<li><a href="http://docs.webplatform.org/wiki/WPD:Community">Community</a></li>
-					<li><a href="http://project.webplatform.org">Issues</a></li>
 				</ul>
 			</nav>
+
 		</div>
+
 	</header>
-	<!-- /header -->
 
-	<?php include 'templates/container_open.html'; ?>
 
-	<h1>
-		Your Web, documented.
-	</h1>
-	
-	<!-- bodyContent -->
-	<div id="bodyContent">
-		<div id="jump-to-nav" class="mw-jump">
-			Jump to: <a href="#mw-head">navigation</a>,
-			<a href="#p-search">search</a>
-		</div>
+<!-- ******************************** Content ******************************** -->
+
+
+<main role="main">
+
+
+<section class="container">
+
+	<div class="intro">
+  	<h1>Your Web, Documented.</h1>
+  	<p>The latest information on how to use the technology that runs the web — HTML, CSS, JavaScript and more.</p>
+  	<p>WebPlatform.org is a work in progress. We could use your help in making it better. <a href="#join-us">Join us.</a></p>
 	</div>
-	
-	<p class="intro">
-		<a class="video" href="http://www.youtube.com/embed/Ug6XAw6hzaw?autoplay=1" target="_blank" rel="lightbox">
-			<img src="http://img.youtube.com/vi/Ug6XAw6hzaw/0.jpg" alt="video preview" />
-			<span class="description">Opening the Web Platform</span>
-		</a>
-		We are an open community of developers building resources for a better web, regardless of brand, browser or platform.
-		Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.
-	</p>
-	<div id="lightbox">
-		<a href="#" title="Close">&times;</a>
-		<iframe src="about:blank" id="video" name="video" frameborder="0" allowfullscreen></iframe>
+  <div class="video"><div class="video-inner">
+    <iframe src="http://www.youtube.com/embed/Ug6XAw6hzaw" frameborder="0" allowfullscreen></iframe>
+  </div></div>
+
+	<div class="coalition">
+  	<h2>Created by a powerhouse coalition. And you.</h2>
+  	<p>Web Platform is a project of the W3C and the <a href="http://www.webplatform.org/stewards/">Web Platform stewards</a> —  Adobe, Apple, Facebook, Google, HP, Intel, Microsoft, Mozilla, Nokia, and Opera. It&#8217;s a collaboration between those who make the specs, those who build the browsers, and developers from all over the world. <a href="#join-us">Wanna join us?</a></p>
 	</div>
-	
-	<h2 id="topics">Hot topics</h2>
-	<ul class="hot-topics">
-		<li><a href="http://docs.webplatform.org/wiki/html">HTML5</a></li>
-    <li><a href="http://docs.webplatform.org/wiki/css">CSS</a></li>
-    <li><a href="http://docs.webplatform.org/wiki/concepts/Pointer_Events">Pointer Events</a></li>
+	<div class="opensource">
+  	<h2>Open. Free. Crowdsourced.</h2>
+  	<p>The web exists because of the open generosity of those who invented it. We share those principles: that by coming together and collaborating, we can make something great for the world to use for free. Web Platform is not run by a single corporation, or a single person. It&#8217;s by and for us all. Anyone is welcome to help write and edit the documents. <a href="#join-us">Join the effort.</a></p>
+	</div>
+	<div class="webplatformAPI">
+  	<h2>Web Platform to Go.</h2>
+  	<p>Need web technology reference docs for your project? <a href="">Contact</a> us about our API.</p>
+  </div>
+	<div class="creativecommons">
+  	<h2>Creative Commons.</h2>
+  	<p>You can reuse the content on this site, for any purpose — commercial or not — as long as you <a href="http://docs.webplatform.org/wiki/WPD:License_and_Reuse">provide attribution.</a></p>
+	</div>
+
+</section>
+
+
+<section class="docs"><div class="container">
+<h1>The Docs</h1>
+<div class="ready-to-use">
+  <h3>Ready To Use</h3>
+    <ul>
+      <li><a href="http://docs.webplatform.org/wiki/concepts/Pointer_Events">Pointer Events</a></li>
+    </ul>
+</div>
+
+<div class="almost-done">
+  <h3>Almost Done</h3>
+  <ul>
+    <li><a href="http://docs.webplatform.org/wiki/css" class="ready">CSS</a></li>
+    <p class="properties-list"><a href="http://docs.webplatform.org/wiki/css/properties">properties,</a>
+    <a href="http://docs.webplatform.org/wiki/css/selectors">selectors,</a>
+    <a href="http://docs.webplatform.org/wiki/css/functions">functions,</a>
+    <a href="http://docs.webplatform.org/wiki/css/atrules">at-rules,</a>
+    <a href="http://docs.webplatform.org/wiki/css/mediaqueries">media queries</a></p>
+  </ul>
+</div>
+
+<div class="just-started">
+  <h3>In Progress</h3>
+  <ul>
+  	<li><a href="http://docs.webplatform.org/wiki/javascript" class="in-progress">JavaScript</a></li>
+		<li><a href="http://docs.webplatform.org/wiki/apis">APIs</a>
+		<ul>
+      <li><a href="http://docs.webplatform.org/wiki/canvas">Canvas</a></li>
+      <li><a href="http://docs.webplatform.org/wiki/apis/file">File API</a></li>
+  		<li><a href="http://docs.webplatform.org/wiki/apis/indexedDB">IndexedDB</a></li>
+
+  		<li><a href="">Appcache</a></li>
+  		<li><a href="">Geolocation</a></li>
+  		<li><a href="">Navigation timing</a></li>
+  		<li><a href="">Performance timing</a></li>
+  		<li><a href="">User timing</a></li>
+  		<li><a href="">Web socket</a></li>
+  		<li><a href="">Webworkers</a></li>
+  		<li><a href="">XMLHttpRequest</a></li>
+
+		</ul></li>
+		<li><a href="">ARIA</a></li>
+  </ul>
+</div>
+
+<div class="deep-freeze">
+  <h3>Coming Later</h3>
+	<ul>
+  	<li><a href="http://docs.webplatform.org/wiki/html">HTML</a></li>
+    <li><a href="http://docs.webplatform.org/wiki/concepts/accessibility">Accessibility</a></li>
+    <li><a href="http://docs.webplatform.org/wiki/dom">DOM</a></li>
+    <li><a href="http://docs.webplatform.org/wiki/svg">SVG</a></li>
 		<li><a href="http://docs.webplatform.org/wiki/webgl">WebGL</a></li>
-		<li><a href="http://docs.webplatform.org/wiki/svg">SVG</a></li>
-    <li><a href="http://docs.webplatform.org/wiki/css/transforms">Transforms</a></li>
-    <li><a href="http://docs.webplatform.org/wiki/canvas">Canvas</a></li>
-		<!-- li><a href="http://docs.webplatform.org/wiki/html/elements/video">Video</a></li -->
-		<li><a href="http://docs.webplatform.org/wiki/html/elements/audio">Audio</a></li>
-		<li><a href="http://docs.webplatform.org/wiki/css/properties/animations">Animations</a></li>
-		<li><a href="http://docs.webplatform.org/wiki/css/media_queries">Media queries</a></li>
-		<li><a href="http://docs.webplatform.org/wiki/apis/indexedDB">IndexedDB</a></li>
-    <li><a href="http://docs.webplatform.org/wiki/apis/file">File API</a></li>
-	</ul>
+  </ul>
+</div>
+
+</div></section>
 
 
-	<h2 id="stewards">Web Platform Stewards</h2>
-	<p>WebPlatform.org is convened by <a href="http://w3.org">W3C</a> and is made possible by the support of the <a href="http://www.webplatform.org/stewards/">Web Platform stewards</a>.</p>
+<section class="container" id="join-us">
 
-	<h2 id="policies">Site Policies</h2>
-	<p>The content on the Web Platform Docs wiki is available under a <a href="http://docs.webplatform.org/wiki/Template:CC-by-3.0">Creative Commons Attribution (CC-BY) license</a>, except where otherwise noted. For more details on our site policies, see our <a id="copywrite-notice" href="http://docs.webplatform.org/wiki/WPD:Copyright">copyright</a> and  <a id="privacy-notice" href="http://docs.webplatform.org/wiki/WPD:Privacy">privacy</a> policies.</p>
+<div class="help-us">
+<h1>Share Your Knowledge.</h1>
+<h2>Help make the Docs better.</h2>
+<p>We need volunteers to create Web Platform Docs. You can help by fixing errors, rewriting drafts, or contributing new content. Even the slightest effort can have a big impact. Please help us make this documentation&nbsp;better.</p>
+</div>
 
-	<?php include 'templates/container_close.html'; ?>
-	<?php include 'templates/footer.html'; ?>
+<div class="current-push">
+<h1>Current Push: JavaScript.</h1>
+<span><p>Anyone is welcome to propose improvements of any kind at any time. If you have an idea, jump in! That said, we have teams focusing on specific sections of the site together to gain momentum and get that section done. Right now, the team effort is focused on JavaScript.</p>
+<p>We just finished importing a rough beginning of JavaScript docs, and started a big push to rewrite & approve each of the 360 pages. If you know JavaScript, we could really use your help. Join us by taking the following three steps.</p></span>
+</div>
+
+<div class="how-to">
+
+<div class="step1">
+  <h2>Step 1: Get an&nbsp;Account.</h2>
+  <p>Anyone is welcome to make changes to the pages on <a href="http://docs.webplatform.org">docs.webplatform.org</a>. First, <a href="http://docs.webplatform.org/w/index.php?title=Special:UserLogin&amp;type=signup">create an account</a>. Then <a href="http://docs.webplatform.org/w/index.php?title=Special:UserLogin">log in</a> and edit pages. It's that&nbsp;easy.</p>
+</div>
+
+<div class="step2">
+  <h2>Step 2: Make a&nbsp;Change.</h2>
+  <p>Do you see a mistake on a page that needs to be fixed? Something that <strike>can</strike> could be written better? Information that's inaccurate or old? Well, jump in — go ahead and change the page. Really. Just fix it. We need lots of people contributing more than we need&nbsp;perfection.</p>
+  <p>Scared you'll make a mistake? Try our our <a href="http://docs.webplatform.org/wiki/WPD:Practice_Page">practice page</a>. You can make mistakes there without hurting&nbsp;anything.</p>
+  <p>Web Platform Docs currently uses MediaWiki, the same software that drives Wikipedia. If you are trying to format something, this <a href="http://en.wikipedia.org/wiki/Wikipedia:Cheatsheet">syntax cheat sheet</a> might be&nbsp;helpful. </p>
+</div>
+
+<div class="step3">
+  <h2>Step 3: Join the Group Email List and Introduce&nbsp;Yourself.</h2>
+  <p>Next, sign up for our group email — the place where everyone who's involved talks to each other. Join the list by emailing an empty message with the subject “subscribe” to <a href="mailto:public-webplatform-request@w3.org">public-webplatform-request@w3.org</a> from the email address you'd like to&nbsp;use.</p>
+  <p>Once you are on the list, please email the group and introduce yourself. Who are you? What would you like to contribute? Are you unsure of what to work on — that's fine. Reach out to us, and we'll be happy to find something for you. Do have have a suggestion on how WPD can be better? We'd love to hear&nbsp;it.</p>
+  <p>You can read the archives and learn more about how the email list works&nbsp;<a href="http://lists.w3.org/Archives/Public/public-webplatform">here</a>.</p>
+</div>
+
+</div>
+
+<div class="now-what">
+
+<h1>Now what?</h1>
+
+<h2>Keep Up With the Latest.</h2>
+<ul>
+<li>Read <a href="http://blog.webplatform.org/">our blog</a>.</li>
+<li>Follow <a href="https://twitter.com/webplatform">@webplatform</a> on Twitter.</li>
+<li>Like our <a href="https://www.facebook.com/WebPlatformDocs">Facebook Page</a>.</li>
+<li>Follow us on <a href="https://plus.google.com/u/0/114879255563551049641/">Google+</a>.</li>
+</ul>
+
+<h2>Write with the Web Platform Wednesdays&nbsp;crew.</h2>
+<p>“Web Platform Wednesdays” is an effort to organize who’s doing what over the next week. This small group focuses together on editing one particular section of the site, to gain momentum and get that section done. If you'd like to be involved, email the group and volunteer. You can also get started by looking at the <a href="http://docs.webplatform.org/wiki/Meta:web_platform_wednesday">current list of who is editing which&nbsp;document</a>.</p>
+
+<h2>Attend (or Host) a Doc&nbsp;Sprint.</h2>
+<p>A great way to join the effort is to attend a doc sprint. Organized by different people around the world, a WebPlatform.org doc sprint gathers a group of people in one room, face-to-face, to spend the day writing documentation. The sprint organizers can help you get setup, walk you through the process, and show you where to&nbsp;start.</p>
+<p>To find out if there’s an upcoming doc sprint near you, <a href="http://docs.webplatform.org/wiki/WPD:Doc_Sprint">check this&nbsp;list</a>.</p>
+<p>If you are interested in organizing a doc sprint in your area, email the group and let us know. We'll help you get&nbsp;started.</p>
+
+<h2>Create Something&nbsp;New.</h2>
+<p>Do you have an idea for a new section on the site? Do you know a web standard specification that needs to be documented, or want to add a new tutorial? Or perhaps you want to add one page to the site. Email the group, and we will&nbsp;help.</p>
+
+<h2>Chat with Us.</h2>
+<p>To talk to folks in real time, perhaps to get a faster answer to a question, jump into our public chat room. We are using <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a> — a type of chatroom that's older than the web. We have a dedicated chatroom (called a “channel”) on the IRC network&nbsp;Freenode.</p>
+<p class="indent">
+	<b>Server:</b> Freenode (irc.freenode.net)<br>
+	<b>Channel:</b> #webplatform
+</p>
+<p>Please feel free to enter the IRC channel anytime, and just start talking to whoever is there. You can connect through <a href="http://docs.webplatform.org/wiki/WPD:Editors_Guide/step_2_communicate_with_the_online_community/irc_clients">an IRC client</a> (standalone software) or <a href="http://webchat.freenode.net/?channels=#webplatform">this web interface</a>. Here’s <a href="http://richard.esplins.org/siwi/2011/07/08/getting-started-freenode-irc/">more on how to get&nbsp;started</a>.</p>
+
+<h2>Learn More About WebPlatform.org.</h2>
+<ul><li><a href="https://developers.google.com/live/shows/ahNzfmdvb2dsZS1kZXZlbG9wZXJzcg4LEgVFdmVudBiomqIEDA">Google Developers: Introducing Web Platform Docs</a> — 30 min video</li>
+<li><a href="http://5by5.tv/webahead/50">The Web Ahead: Web Platform Docs</a> — 1 hour interview</li>
+<li><a href="http://docs.webplatform.org/wiki/WPD:Policy">About Web Platform Docs, Policies and more</a></li>
+</ul>
+
+</div>
+
+</section>
+
+</main>
 
 
+<!-- ******************************** /Content ******************************** -->
+
+
+<footer role="contentinfo">
+  <div class="container">
+    <div id="footer-wordmark">
+      <a href="http://www.webplatform.org"><span id="footer-title">WebPlatform<span id="footer-title-light">.org</span></span></a>
+    </div>
+    <ul class="stewards">
+      <li class="steward-w3c"><a href="http://www.webplatform.org/stewards/w3c">W3C</a></li>
+      <li class="steward-adobe"><a href="http://www.webplatform.org/stewards/adobe">Adobe</a></li>
+      <li class="steward-facebook"><a href="http://www.webplatform.org/stewards/facebook">facebook</a></li>
+      <li class="steward-google"><a href="http://www.webplatform.org/stewards/google">Google</a></li>
+      <li class="steward-hp"><a href="http://www.webplatform.org/stewards/hp">HP</a></li>
+      <li class="steward-intel"><a href="http://www.webplatform.org/stewards/intel">Intel</a></li>
+      <li class="steward-microsoft"><a href="http://www.webplatform.org/stewards/microsoft">Microsoft</a></li>
+      <li class="steward-mozilla"><a href="http://www.webplatform.org/stewards/mozilla">Mozilla</a></li>
+      <li class="steward-nokia"><a href="http://www.webplatform.org/stewards/nokia">Nokia</a></li>
+      <li class="steward-opera"><a href="http://www.webplatform.org/stewards/opera">Opera</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+
+</script>
 <script src="http://www.webplatform.org/assets/lightbox.js"></script>
-
+<script src="http://www.webplatform.org/assets/notes.js"></script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://tracking.webplatform.org/"
+    _paq.push(['setTrackerUrl', u+'js/']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
 </body>
 </html>
