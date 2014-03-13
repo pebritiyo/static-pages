@@ -13,7 +13,6 @@
 <meta name="viewport" content="width=device-width">
 <!--[if lt IE 9]><link rel="stylesheet" href="http://docs.webplatform.org/w/skins/webplatform/ie8.css"><![endif]-->
 <!--[if lt IE 8]><link rel="stylesheet" href="http://docs.webplatform.org/w/skins/webplatform/ie7.css"><![endif]-->
-<link rel="stylesheet" href="http://www.webplatform.org/assets/landing.css" />
 <style>
 body {
    position: relative;
