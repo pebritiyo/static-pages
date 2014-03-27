@@ -1,5 +1,4 @@
-# WebPlatform Docs
+# GOING TO BE DELETED!
 
-This is the (not so) static pages hosting content that do not need a CMS.
+This workspace is going to be deleted by Monday March 31. Please refer to the new authoritative workspace at https://github.com/webplatform/www.webplatform.org/
 
-Fork, and contribute!
